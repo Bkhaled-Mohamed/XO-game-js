@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family:  'Oxygen Mono', monospace;
+}
+/* font-family: 'Poppins', sans-serif; */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #111c21 0%, #051922 100%);
+}
+
+.startMenu{
+    min-width: 35%;
+    text-align: center;
+    /* border:  1px solid blue; */
+    transition: transform 0.4s ease-in-out;
+}
+
+.startMenu.active{
+    transform: translateY(-220%);
+}
+
+.Xsm{
+    color: #22A699;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family:  'Poppins', sans-serif;
+    
+}
+
+.Osm{
+    color: #F24C3D;
+    font-size: 4.1rem;
+    font-weight: bold;
+    font-family:  'Poppins', sans-serif;
+}
+.startMenu>h1{
+    margin: 0;
+
+    
+}
+
+.pickPlayer{
+    background-color: #1e3640;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px #0b151b;
+}
+
+.text1{
+    color: #eee;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.text3{
+    color: #bbbaba;   
+    font-size: 0.7rem;
+
+
+}
+
+
+/* .xOrO{
+
+} */
+
+.button-box{
+    width: 200px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.toggle-btn{
+    padding: 10px 40px;
+
+    margin: 0;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 30px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+    color: rgb(17, 16, 16);
+}
+
+.btn{
+    left: 0;
+    top: 0;
+
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background-color: #22A699;
+    border-radius: 20px;
+    transition: .5s;
+
+}
+
+
+.btn1{
+
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px #0b151b;
+    border: none;
+    background-color: #F9D949;
+
+}
+.startMenu>.btn1:last-child{
+    background-color: #F45050;
+}
+
+.btn1:hover{
+    background-color: #e4c22b;
+}
+
+.startMenu>.btn1:last-child:hover{
+    background-color: #f13e3e;
+}
+
+
+
+/* SECTION 2  */
+
+.gameBoard{
+    min-width: 35%;
+    text-align: center;
+    /* border: 1PX SOLID black; */
+    position:fixed;
+    bottom: -90%;
+    transition: bottom 0.5s ease-in-out;
+
+
+}
+.gameBoard.active{
+    bottom: 15%
+}
+
+
+
+
+.game-row1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+.game-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.Xsm2{
+    color: #22A699;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:  'Poppins', sans-serif;
+    margin-right: 0;
+    font-family:  'Poppins', sans-serif;
+    position: relative;
+    margin-left: 10px;
+
+        
+}
+
+.Osm2{
+
+    color: #F24C3D;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:  'Poppins', sans-serif;
+
+
+    
+}
+
+.text4{
+
+    
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.whosTurn{
+    font-size: 1rem;
+
+    margin: 5px;
+    padding: 22px 20px;
+    border-radius: 10px;
+    background-color: #1a2b33;
+    color: #22A699;
+    text-align: center;
+    box-shadow: 1px 5px 10px #0b151b;
+
+    justify-content: center;
+
+}
+.restart{
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #999393;
+    color: #07202c;
+    text-align: center;
+    box-shadow: 1px 5px 10px #0b151b;
+    cursor: pointer;
+    height: 100%;
+}
+.restart:hover{
+
+    background-color: #cacaca;
+    color: #07202c;
+
+}
+
+.square{
+    width: 30%;
+    height: 100px;
+    background-color: #1a2b33;
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 10px;
+
+    margin: 12px 0;
+    box-shadow: 1px 5px 10px #0b151b;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.square:hover{
+    background-color: #3e5a67;
+
+
+}
+
+
+.square1{
+    width: 30%;
+    height: 80px;
+    background-color: #f1973e;
+
+    border-radius: 10px;
+
+    margin: 12px 0;
+    box-shadow: 1px 5px 10px #0b151b;
+
+}
+
+.squareMark{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    padding: auto;
+
+    text-align: center;
+}
+
+.square2{
+    width: 30%;
+    height: 80px;
+    background-color: grey;
+
+    border-radius: 10px;
+
+    margin: 12px 0;
+    box-shadow: 1px 5px 10px #0b151b;
+
+}
+.score1{
+    background-color: #22A699 ;
+    font-family:'Poppins', sans-serif ;
+}
+
+.score2{
+
+    background-color: #F24C3D ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important ;
+}
+
+.X{
+
+    color: #22A699;
+
+}
+
+.O{
+    color: #F24C3D;
+}
+.draw{
+    color: #8b8989;
+}
+
+.winPannel{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 200px;
+
+    position: absolute;
+    text-align: center;
+    background-color: #1f3540;
+
+    justify-content: center;
+    align-content: center;
+
+    box-shadow: 1px 5px 10px #0b151b;
+
+}
+
+.pannelText1{
+
+    color: white;
+    font-size: 0.8rem;
+
+}
+
+.pannelText2{
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pannelBtn1{
+    background-color: #999393;
+    box-shadow: 1px 5px 10px rgb(33, 32, 20);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;    
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.pannelBtn1:hover{
+    background-color: #c8c1c1;
+
+}
+
+.pannelBtn2{
+    background-color: #e8923c;
+    box-shadow: 1px 5px 10px rgb(33, 32, 20);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;   
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+    .pannelBtn2:hover{
+    background-color: #ff8d1b;
+
+}
+
+
+.hidden{
+    display: none;
+    
+}

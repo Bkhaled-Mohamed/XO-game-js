@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="startMenu  ">
+
+        <h1><span class="Xsm">X</span><span class="Osm">O</span></h1>
+        <div class="pickPlayer">
+            <h2 class="text1">
+                PICK YOUR MARK:
+            </h2>
+
+            <div class="xOrO">
+                <div class="button-box">
+                    <div class="btn"> </div>
+                        <button type="button" class="toggle-btn" onclick="switchPlyerX()">X</button>
+                        <button type="button" class="toggle-btn" onclick="switchPlyerO()">O</button>
+               </div>
+            </div>
+
+
+
+
+            <p class="text3">
+               NOTE: X GOES FIRST
+            </p>
+        </div>
+        <button class="btn1 vsCpu">NEW GAME (VS CPU)</button>
+        <button class="btn1 vsPlayer">NEW GAME (VS Player)</button>
+
+    </section>
+
+    <section class="gameBoard ">
+
+            <div class="game-row1">
+                <div class="game-col text4"><h3><span class="Xsm2">X</span> <span class="Osm2">O</span></h3></div>
+                <div class="game-col ">
+                    <p class="whosTurn">X TURN</p>
+                </div>
+                <div class="game-col restart" > <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="48"><path d="M451-122q-123-10-207-101t-84-216q0-77 35.5-145T295-695l43 43q-56 33-87 90.5T220-439q0 100 66 173t165 84v60Zm60 0v-60q100-12 165-84.5T741-439q0-109-75.5-184.5T481-699h-20l60 60-43 43-133-133 133-133 43 43-60 60h20q134 0 227 93.5T801-439q0 125-83.5 216T511-122Z"/></svg></a></div>
+            </div>    
+            <div class="game-row">
+                <div  cellIndex="0" data-cell class="game-col square squareMark " ></div>
+                <div cellIndex="1" data-cell class="game-col square squareMark "></div>
+                <div cellIndex="2" data-cell class="game-col square squareMark "></div>
+            </div>  
+            <div class="game-row">
+                <div cellIndex="3" data-cell class="game-col  square squareMark"></div>
+                <div cellIndex="4" data-cell class="game-col squareMark square"></div>
+                <div cellIndex="5" data-cell class="game-col squareMark square"></div>
+            </div>  
+            <div class="game-row ">
+                <div cellIndex="6" data-cell class="game-col squareMark square"></div>
+                <div cellIndex="7" data-cell class="game-col squareMark square"></div>
+                <div cellIndex="8" data-cell class="game-col squareMark square"></div>
+            </div>  
+
+            <div class="game-row ">
+                <div class="game-col square2 score1">
+                    <h3>❌ <br> <span class="winnerX">0</span></h3>
+
+                </div>
+                <div class="game-col square2">
+                    <h3>TIES <br><span class="winnerDraw">0</span></h3>
+
+                </div>
+                <div class="game-col square2 score2">
+                    <h3>⭕ <br><span class="winnerO">0</span></h3>
+                   
+                </div>
+            </div>  
+
+
+        
+    </section>
+    <div class="winPannel hidden">
+        <div class="pannel">
+            <p class="pannelText1">YOU LOSE!</p>
+            <p class="pannelText2 X">X </p>
+            <button class="pannelBtn1">QUITE</button>
+            <button class="pannelBtn2">NEXT ROUND</button>
+        </div>
+    </div>
+
+
+    <script src="xo.js"></script> 
+</body>
+</html>
